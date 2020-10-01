@@ -6,9 +6,9 @@ var files = fs.readdirSync(path.join(__dirname, 'services'));
 var services = [];
 
 files.forEach(function(file) {
-	if (file.match(/.*\.js/i)) {
+	if (file.match(/.*\.js/i)) {                          //beginif of loop
 		var mod = require('./services/' + file);
-		services.push(mod);
+		services.push(mod);                                 //end loop
 	}
 });
 
